@@ -1,7 +1,7 @@
 ## Members
 
 <dl>
-<dt><a href="#getAll">getAll</a> ⇒ <code>*</code> | <code><a href="#Nothing">Nothing</a></code></dt>
+<dt><a href="#deepGet">deepGet</a> ⇒ <code>*</code> | <code><a href="#Nothing">Nothing</a></code></dt>
 <dd><p>Access all properties on object going through the given path,
 returns <a href="#Nothing">Nothing</a> if it is not possible to fetch the value</p>
 </dd>
@@ -30,9 +30,9 @@ Represents an error in some accessing operation
 | --- | --- |
 | isNothing | <code>true</code> | 
 
-<a name="getAll"></a>
+<a name="deepGet"></a>
 
-## getAll ⇒ <code>\*</code> \| [<code>Nothing</code>](#Nothing)
+## deepGet ⇒ <code>\*</code> \| [<code>Nothing</code>](#Nothing)
 Access all properties on object going through the given path,
 returns [Nothing](#Nothing) if it is not possible to fetch the value
 

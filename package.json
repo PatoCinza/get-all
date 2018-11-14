@@ -1,5 +1,5 @@
 {
-  "name": "get-all",
+  "name": "deep-get",
   "version": "1.0.0",
   "description": "get all the way through your variable without breaking your app",
   "main": "index.js",
