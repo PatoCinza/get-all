@@ -23,21 +23,21 @@ returns <a href="#Nothing">Nothing</a> if it is not possible to fetch the value<
 ## Nothing
 Represents an error in some accessing operation
 
-**Kind**: global interface
+**Kind**: global interface  
 **Properties**
 
 | Name | Type |
 | --- | --- |
-| isNothing | <code>true</code> |
+| isNothing | <code>true</code> | 
 
 <a name="deepGet"></a>
 
 ## deepGet ⇒ <code>\*</code> \| [<code>Nothing</code>](#Nothing)
-Access all properties on object going through the given path,
+Access deep properties on object going through the given path,
 returns [Nothing](#Nothing) if it is not possible to fetch the value
 
-**Kind**: global variable
-**Returns**: <code>\*</code> \| [<code>Nothing</code>](#Nothing) - Final accessed property or nothing
+**Kind**: global variable  
+**Returns**: <code>\*</code> \| [<code>Nothing</code>](#Nothing) - Final accessed property or nothing  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -49,8 +49,8 @@ returns [Nothing](#Nothing) if it is not possible to fetch the value
 ## isNothing ⇒ <code>Boolean</code>
 Checks if x is Nothing
 
-**Kind**: global variable
-**Returns**: <code>Boolean</code> - whether it's equal or not
+**Kind**: global variable  
+**Returns**: <code>Boolean</code> - whether it's equal or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
