@@ -1,22 +1,22 @@
-# deepGet
+# deepGetter
 Simple interface to access deep properties in an Object in a failsafe way, returning the value or a `Nothing` if it doesn't exists
 
 You will probably want it when messing with third party APIs, or putting a third party product on your clients, because you can rely on api responses, or properties you need to have on pages, other than that, it's just a cleaner way to do some stuff
 
 ## Getting Started
-These instructions will get you through installing and using deep-get on your project.
+These instructions will get you through installing and using deep-getter on your project.
 
 ### Installing
 Simply install using npm or yarn
 ```sh
-npm install --save deep-get
+npm install --save deep-getter
 ```
 
 ### Using
-This section will guide you through using deep-get on your repository, showing how to use and what code you should replace for it
+This section will guide you through using deep-getter on your repository, showing how to use and what code you should replace for it
 
 ```js
-const { deepGet } = require('deep-get')
+const { deepGet } = require('deep-getter')
 
 // Doing this:
 const grayHex = deepGet(product, 'details.specs.color.gray')
@@ -28,7 +28,7 @@ const grayHex = product.details && product.details.specs && product.details.spec
 But your Object is not perfect, and you have to check if it returned what you wanted, in this cases you have the `isNothing` for you
 
 ```js
-const { deepGet, isNothing } = require('deep-get')
+const { deepGet, isNothing } = require('deep-getter')
 
 // Doing this:
 const grayHex = deepGet(product, 'details.specs.color.gray')
@@ -45,7 +45,7 @@ The `deepGet` function also gains you a little bit of power when it comes to acc
 
 ```js
 
-const { deepGet } = require('deep-get')
+const { deepGet } = require('deep-getter')
 
 // Assuming that color is an Array, this way you get the first color:
 const grayHex = deepGet(product, 'color.0')
@@ -61,19 +61,19 @@ const clusterName = cluster.up && cluster.up['149'] && cluster.up['149'].label
 ```
 
 ## Docs
-You can access the docs at: [docs](https://github.com/patocinza/deep-gettree/master/docs)
+You can access the docs at: [docs](https://github.com/patocinza/deep-gettertree/master/docs)
 
 ## Questions?
-If you have any questions about using Arthemis on your project, please open a [new issue](https://github.com/patocinza/deep-get/issues/new).
+If you have any questions about using Arthemis on your project, please open a [new issue](https://github.com/patocinza/deep-getter/issues/new).
 
 ## Filing a bug
 
-If you found a bug, please open a [new issue](https://github.com/patocinza/deep-get/new).
+If you found a bug, please open a [new issue](https://github.com/patocinza/deep-getter/new).
 
 ## Contributing
 
 This project is open for contributions.
-To suggest a new feature, please open a [new issue](https://github.com/patocinza/deep-get/issues/new).
+To suggest a new feature, please open a [new issue](https://github.com/patocinza/deep-getter/issues/new).
 To fix a filed bug or implementing a feature, please fork this project, create a new branch containing your code and send a pull request. If you need any guidance, you can reach us out by creating a new issue.
 
 ## Versioning
@@ -84,7 +84,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Gabriel Luis** - [PatoCinza](https://github.com/patocinza)
 
-See also the list of [contributors](https://github.com/patocinza/deep-get/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/patocinza/deep-getter/contributors) who participated in this project.
 
 ## License
 
