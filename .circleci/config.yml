@@ -1,16 +1,8 @@
 version: 2
 jobs:
-  lint:
-    steps:
-      - checkout
-      - npm run lint
-  test:
-    steps:
-      - checkout
-      - npm run test
   build:
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:8.12.0
     steps:
       - checkout
       - run:
