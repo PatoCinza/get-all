@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PatoCinza/get-all.git"
+    "url": "git+https://github.com/PatoCinza/deep-get.git"
   },
   "author": "Pato Cinza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PatoCinza/get-all/issues"
+    "url": "https://github.com/PatoCinza/deep-get/issues"
   },
-  "homepage": "https://github.com/PatoCinza/get-all#readme",
+  "homepage": "https://github.com/PatoCinza/deep-get#readme",
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
