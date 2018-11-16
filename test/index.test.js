@@ -58,7 +58,6 @@ describe('deepGetOrElse function', () => {
       .toEqual(mock.data.details.falseProp)
   })
 
-
   it('should return falsy property value', () => {
     expect(deepGetOrElse(mock, 'data.details.falseProp', true))
       .toEqual(mock.data.details.falseProp)

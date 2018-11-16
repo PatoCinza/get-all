@@ -43,6 +43,6 @@ const isNothing = (x) => x === Nothing
  * @param { String } path Path to be accessed separated by .
  * @param { * } fallback the value to return if obj[path] is Nothing
  */
-deepGetOrElse = (obj, path, fallback) => isNothing(deepGet(obj, path)) ? fallback : deepGet(obj, path)
+const deepGetOrElse = (obj, path, fallback) => isNothing(deepGet(obj, path)) ? fallback : deepGet(obj, path)
 
 module.exports = { deepGet, isNothing, deepGetOrElse }
