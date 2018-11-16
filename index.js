@@ -27,6 +27,17 @@ module.exports = {
   deepGet: (obj, path) => path && path.split('.').reduce(get, obj),
 
   /**
+   * Access deep properties on object going through the given path
+   * If it would return a {@link Nothing}, it returns `fallback` instead
+   * @global
+   * @name deepGetOrElse
+   * @param { Object } obj Object to be accessed
+   * @param { String } path Path to be accessed separated by .
+   * @param { * } fallback the value to return if obj[path] is Nothing
+   */
+  deepGetOrElse: (obj, path, fallback) => isNothing(getAll(obj, path)) ? fallback : getAll(obj, path),
+
+  /**
    * Checks if x is Nothing
    * @global
    * @name isNothing

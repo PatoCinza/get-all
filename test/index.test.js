@@ -12,7 +12,7 @@ const mock = {
 
 describe('deepGet function', () => {
   it('should return the property value', () => {
-    expect(deepGet(mock, 'data.details.hasImage')).toBe(true)
+    expect(deepGet(mock, 'data.details.hasImage')).toEqual(mock.data.details.hasImage)
   })
 
   it('should return false in false property instead of Nothing', () => {
@@ -50,4 +50,8 @@ describe('failsafe environment', () => {
   it('should not break when accessing subsequent non existent keys', () => {
     expect(isNothing(deepGet(mock, 'data.error.error.error.error'))).toBe(true)
   })
+})
+
+describe('deepGetOrElse function', () => {
+  it('should return the ')
 })
