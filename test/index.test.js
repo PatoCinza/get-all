@@ -1,4 +1,4 @@
-const { deepGet, isNothing } = require('../index')
+const { deepGet, deepGetOrElse, isNothing } = require('../index')
 const mock = {
   data: {
     colors: [ 'gray', 'blue' ],
@@ -16,7 +16,7 @@ describe('deepGet function', () => {
   })
 
   it('should return false in false property instead of Nothing', () => {
-    expect(deepGet(mock, 'data.details.falseProp')).toBe(false)
+    expect(deepGet(mock, 'data.details.falseProp')).toEqual(mock.data.details.falseProp)
   })
 
   it('should access array index in path', () => {
@@ -53,5 +53,19 @@ describe('failsafe environment', () => {
 })
 
 describe('deepGetOrElse function', () => {
-  it('should return the ')
+  it('should return truthy property value', () => {
+    expect(deepGetOrElse(mock, 'data.details.falseProp', false))
+      .toEqual(mock.data.details.falseProp)
+  })
+
+
+  it('should return falsy property value', () => {
+    expect(deepGetOrElse(mock, 'data.details.falseProp', true))
+      .toEqual(mock.data.details.falseProp)
+  })
+
+  it('should return fallback value', () => {
+    expect(deepGetOrElse(mock, 'data.details.nonexistent', 'fallbackValue'))
+      .toEqual('fallbackValue')
+  })
 })
